@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="css/main.css">
+    <title>JOBPLUS</title>
+</head>
+
+<body>
+    <section>
+    <nav class="nav">
+        <input type="checkbox" class="nav_toggle" id="hamburger" hidden/> <!--hidden hides the check box-->
+        <ul class="nav_leftblock">
+            <li class="nav_hamburger">
+                <label for="hamburger"><img src="images/menu 1.svg" alt=""></label>
+            </li>
+            <li class="nav_logo"><a href="index.html">JOBPLUS</a></li>
+        </ul>
+        <ul class="nav_icons">
+            <li><a href="listings.html"><img src="images/magnify.svg" alt=""></a></li>
+            <li><a href="notification.html"><img src="images/notify-active.svg" alt=""></a></li>
+            <li><a href="saved_jobs.html">
+                <img src="images/saved.svg" alt=""></a>
+                <span class="nav_savedcount">1</span>
+            </li>
+            <li><a href="profile.html"><img src="images/profile.svg" alt=""></a></li>
+            <li><a href="login.html"><img src="images/exit.svg" alt=""></a></li>
+        </ul>
+        <ul class="nav_droplist">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="listings.html">
+                <li>Job Listing</li>
+            </a>
+            <a href="apply.html">
+                <li>Job Applications</li>
+            </a>
+        </ul>
+
+    </nav>
+
+    
+    <div class="hero">
+        <div class="hero_wrap">
+           <h2>Profile</h2>            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form form--page">
+            <div class="form_group form_group--page">
+                <label class="form_label">Desired Job Title</label>
+                <input class="form_field" type="text" placeholder="Desired job title">
+            </div>
+
+            <div class="form_group form_group--page">
+                <label class="form_label">Min per annum salary</label>
+                <input class="form_field" type="text" placeholder="Min per annum salary">
+            </div>
+
+            <div class="form_group form_group--page">
+                <label class="form_label">Job Type</label>
+                <p class="form_checkbox"><input type="checkbox">Permanent</p>
+                <p class="form_checkbox"><input type="checkbox">Temporary</p>
+                <p class="form_checkbox"><input type="checkbox">Contract</p>
+            </div>
+
+            <div class="form_group form_group--page">
+                <label class="form_label">Hours</label>
+                <p class="form_checkbox"><input type="checkbox">Full-Time</p>
+                <p class="form_checkbox"><input type="checkbox">Part-Time</p>
+            </div>
+
+            <div class="form_group form_group--page">
+                <label class="form_label">Sector</label><br>
+                <select class="form_select">
+                    <option selected="selected">Choose a sector</option>
+                    <option>Technology</option>
+                    <option>Engineering</option>
+                    <option>Administration</option>
+                </select>
+            </div>
+
+            <div class="form_group form_group--page">
+                <label class="form_label">Experience</label><br>
+                <textarea class="form_textarea"></textarea>
+            </div>
+
+            <div class="form_group form_group--page">
+                <input class="form_btn"  type="submit" value="Submit">
+            </div>
+
+            <footer>Already have an account? <a href="login.html">Login</a></footer>
+        </div>
+    </div>
+    
+        <div class="cookie">
+            <p>
+                Jobplus uses cookies. By contnuing you are agreeing to our use of cookies. <a href="">Learn more</a>
+            </p>
+            <img src="images/cookies-close.svg" alt="">
+        </div>
+    </section>
+    <footer class="footer">COPYRIGHT &copy; jobplus 2022</footer>
+</body>
+
+</html>

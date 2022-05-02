@@ -1,0 +1,15 @@
+.footer
+{
+    background-color: var(--gamma);
+    color: var(--delta);
+    text-align: center;
+    padding: 12rem;
+    font-size: 13rem;
+
+    //@include respond-to ('small')
+   // {
+    //    position: flex;
+        //bottom: 0;
+   // }
+    
+}

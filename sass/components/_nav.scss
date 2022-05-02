@@ -1,0 +1,98 @@
+.nav {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: repeat(2, min-content); // can use min-content min-content or 1fr 1fr
+
+    background-color: var(--alpha);
+
+    &_leftblock {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+
+        display: flex;
+        align-items: center;
+        padding: 12rem;
+    }
+
+    &_icons {   // Ampersand underscore underscore does not work 
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+
+        display: flex;
+        align-items: center;
+        padding: 12rem;
+        li{
+            margin-left: 20rem;
+        }
+    }
+
+    &_droplist{
+        grid-row: 2 / 3;
+        grid-column: 1 / -1; // This is same as using 1 /4 but this allows more flexibility
+
+        background-color: var(--light);
+        display: none;
+    }
+
+    &_hamburger{
+        margin-right: 10rem;
+    }
+
+    &_logo{
+        color: var(--delta);
+        font-weight: bold;
+    }
+
+    &_savedcount{
+        position: absolute;
+        padding: 2rem 6rem 3rem 6rem; //top right bottom left
+        border-radius: 50%;
+        background-color: var(--alert);
+        color: var(--delta);
+        border: 1px var(--delta);
+        font-size: 10rem;
+        display: inline-block;
+        transform: translate(-5rem, -10rem); // x and y axis
+    }
+
+    &_toggle:checked ~ &_droplist {//looks for the class drop list on the same level as toggle when checked
+        display: block; //Then display the block as by defua;t it is hidden by display:none on the droplist class above
+        li{
+            padding: 15rem 10rem;
+            border-bottom: 1px var(--delta) solid;      
+        }
+    }
+//mobile layout is the bit above
+//The bit below makes our page respond to other widths
+    @include respond-to('small'){
+        grid-template-columns: 1fr min-content minmax(590rem, auto) min-content 1fr;
+        //grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+        &_leftblock{
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+        }
+
+        &_droplist{
+            grid-row: 1 / 2;
+            grid-column: 3 / 4;
+
+            display: flex;//makes it visible, floats
+            align-items: center;
+            background-color: var(--alpha);
+            color: var(--delta);
+            li{
+                margin-left: 20rem;
+             }
+        }
+
+        &_icons{
+            grid-row: 1 / 2;
+            grid-column: 4 / 5;
+        }
+
+        &_hamburger{
+            display: none;
+        }
+    }
+}
