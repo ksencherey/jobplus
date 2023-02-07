@@ -1,142 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="stylesheet" href="css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/main.css" />
     <title>JOBPLUS</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section>
-    <nav class="nav">
-        <input type="checkbox" class="nav_toggle" id="hamburger" hidden/> <!--hidden hides the check box-->
+      <nav class="nav">
+        <input type="checkbox" class="nav_toggle" id="hamburger" hidden />
+        <!--hidden hides the check box-->
         <ul class="nav_leftblock">
-            <li class="nav_hamburger">
-                <label for="hamburger"><img src="images/menu 1.svg" alt=""></label>
-            </li>
-            <li class="nav_logo"><a href="index.html">JOBPLUS</a></li>
+          <li class="nav_hamburger">
+            <label for="hamburger"
+              ><img src="images/menu 1.svg" alt=""
+            /></label>
+          </li>
+          <li class="nav_logo"><a href="index.html">JOBPLUS</a></li>
         </ul>
         <ul class="nav_icons">
-            <li><a href="listings.html"><img src="images/magnify.svg" alt=""></a></li>
-            <li><a href="notification.html"><img src="images/notify-active.svg" alt=""></a></li>
-            <li><a href="saved_jobs.html">
-                <img src="images/saved.svg" alt=""></a>
-                <span class="nav_savedcount">1</span>
-            </li>
-            <li><a href="profile.html"><img src="images/profile.svg" alt=""></a></li>
-            <li><a href="login.html"><img src="images/exit.svg" alt=""></a></li>
+          <li>
+            <a href="listings.html"><img src="images/magnify.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="notification.html"
+              ><img src="images/notify-active.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="saved_jobs.html"> <img src="images/saved.svg" alt="" /></a>
+            <span class="nav_savedcount">1</span>
+          </li>
+          <li>
+            <a href="profile.html"><img src="images/profile.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="login.html"><img src="images/exit.svg" alt="" /></a>
+          </li>
         </ul>
         <ul class="nav_droplist">
-            <a href="index.html">
-                <li>Home</li>
-            </a>
-            <a href="listings.html">
-                <li>Job Listing</li>
-            </a>
-            <a href="apply.html">
-                <li>Job Applications</li>
-            </a>
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <a href="listings.html">
+            <li>Job Listing</li>
+          </a>
+          <a href="apply.html">
+            <li>Job Applications</li>
+          </a>
         </ul>
+      </nav>
 
-    </nav>
-
-    
-    <div class="hero hero--bgimg">
+      <div class="hero hero--bgimg" style="background-image: url('images/hero-big.svg');">
         <div class="hero_wrap">
-            <h1>Connecting candidates to their dream jobs</h1>
-            <div class="form">
-                <div class="form_group">
-                    <label class="form_label form_label--light">What</label>
-                    <input class="form_field" type="text" placeholder="Job title, skill or company">
-                </div>
-
-                <div class="form_group">
-                    <label class="form_label form_label--light">Where</label>
-                    <input class="form_field" type="text" placeholder="Town, city or postcode">
-                </div>
-
-                <div class="form_group">
-                    <input class="form_btn"  type="submit" value="Search">
-                </div>
+          <h1>Connecting candidates to their dream jobs</h1>
+          <div class="form">
+            <div class="form_group">
+              <label class="form_label form_label--light">What</label>
+              <input
+                class="form_field"
+                type="text"
+                placeholder="Job title, skill or company"
+              />
             </div>
-        </div>
-    </div>
 
-    <div class="container">
+            <div class="form_group">
+              <label class="form_label form_label--light">Where</label>
+              <input
+                class="form_field"
+                type="text"
+                placeholder="Town, city or postcode"
+              />
+            </div>
+
+            <div class="form_group">
+              <input class="form_btn" type="submit" value="Search" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
         <div class="sector">
-            <h2>Choose your sector</h2>
-            <p>Jobs across multiple sectors. See the latest roles now</p>
+          <h2>Choose your sector</h2>
+          <p>Jobs across multiple sectors. See the latest roles now</p>
 
-            <div class="sector_types">
-                <div class="sector_wrap">
-                    <picture class="sector_picture"> <!--picture allows you to specify what image to use based on screen size-->
-                        <source srcset="images/tech-big.jpg" media="(min-width: 767px)">
-                        <source srcset="images/tech-small.jpg">
-                        <img src="images/tech-small.jpg" alt=""> <!--will use this image if browser does not suport srcset-->
-                    </picture>
+          <div class="sector_types">
+            <div class="sector_wrap">
+              <picture class="sector_picture">
+                <!--picture allows you to specify what image to use based on screen size-->
+                <source
+                  srcset="images/tech-big.jpg"
+                  media="(min-width: 767px)"
+                />
+                <source srcset="images/tech-small.jpg" />
+                <img src="images/tech-small.jpg" alt="" />
+                <!--will use this image if browser does not suport srcset-->
+              </picture>
 
-                    <div class="sector_name">Technology</div>
-                    <ul class="sector_list">
-                        <li><a href="">Accountancy jobs<span>5, 757</span></a></li>
-                        <li><a href="">Acturial jobs<span>5, 757</span></a></li>
-                        <li><a href="">Admin, Secretarial jobs<span>5, 757</span></a></li>
-                    </ul>
-                </div>
-
-                <div class="sector_wrap">
-                    <picture class="sector_picture"> <!--picture allows you to specify what image to use based on screen size-->
-                        <source srcset="images/eng-big.jpg" media="(min-width: 767px)">
-                        <source srcset="images/eng-small.jpg">
-                        <img src="images/tech-small.jpg" alt=""> <!--will use this image if browser does not suport srcset-->
-                    </picture>
-
-                    <div class="sector_name">Engineering</div>
-                    <ul class="sector_list">
-                        <li><a href="">Accountancy jobs<span>5, 757</span></a></li>
-                        <li><a href="">Acturial jobs<span>5, 757</span></a></li>
-                        <li><a href="">Admin, Secretarial jobs<span>5, 757</span></a></li>
-                    </ul>
-                </div>
-
-                <div class="sector_wrap">
-                    <picture class="sector_picture"> <!--picture allows you to specify what image to use based on screen size-->
-                        <source srcset="images/admin-big.jpg" media="(min-width: 767px)">
-                        <source srcset="images/admin-small.jpg">
-                        <img src="images/tech-small.jpg" alt=""> <!--will use this image if browser does not suport srcset-->
-                    </picture>
-
-                    <div class="sector_name">Administration</div>
-                    <ul class="sector_list">
-                        <li><a href="">Accountancy jobs<span>5, 757</span></a></li>
-                        <li><a href="">Acturial jobs<span>5, 757</span></a></li>
-                        <li><a href="">Admin, Secretarial jobs<span>5, 757</span></a></li>
-                    </ul>
-                </div>
-
-                <a href="">
-                    <div class="sector_browse">Browse all sectors</div>
-                </a>
-
-                <ul class="sector_mobilelist">
-                    <li><a href="">Accountancy jobs <span>5, 757</span></a></li>
-                    <li><a href="">Acturial jobs <span>5, 757</span></a></li>
-                    <li><a href="">Admin, Secretarial jobs <span>5, 757</span></a></li>
-                </ul>
+              <div class="sector_name">Technology</div>
+              <ul class="sector_list">
+                <li>
+                  <a href="">Accountancy jobs <span>5, 757</span></a>
+                </li>
+                <li>
+                  <a href="">Acturial jobs <span>5, 757</span></a>
+                </li>
+                <li>
+                  <a href="">Admin, Secretarial jobs <span>5, 757</span></a>
+                </li>
+              </ul>
             </div>
+
+            <div class="sector_wrap">
+              <picture class="sector_picture">
+                <!--picture allows you to specify what image to use based on screen size-->
+                <source
+                  srcset="images/eng-big.jpg"
+                  media="(min-width: 767px)"
+                />
+                <source srcset="images/eng-small.jpg" />
+                <img src="images/tech-small.jpg" alt="" />
+                <!--will use this image if browser does not suport srcset-->
+              </picture>
+
+              <div class="sector_name">Engineering</div>
+              <ul class="sector_list">
+                <li>
+                  <a href="">Accountancy jobs<span>5, 757</span></a>
+                </li>
+                <li>
+                  <a href="">Acturial jobs<span>5, 757</span></a>
+                </li>
+                <li>
+                  <a href="">Admin, Secretarial jobs<span>5, 757</span></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sector_wrap">
+              <picture class="sector_picture">
+                <!--picture allows you to specify what image to use based on screen size-->
+                <source
+                  srcset="images/admin-big.jpg"
+                  media="(min-width: 767px)"
+                />
+                <source srcset="images/admin-small.jpg" />
+                <img src="images/tech-small.jpg" alt="" />
+                <!--will use this image if browser does not suport srcset-->
+              </picture>
+
+              <div class="sector_name">Administration</div>
+              <ul class="sector_list">
+                <li>
+                  <a href="">Accountancy jobs <span>5, 757</span></a>
+                </li>
+                <li>
+                  <a href="">Acturial jobs <span>5, 757</span></a>
+                </li>
+                <li>
+                  <a href="">Admin, Secretarial jobs <span>5, 757</span></a>
+                </li>
+              </ul>
+            </div>
+
+            <a href="">
+              <div class="sector_browse">Browse all sectors</div>
+            </a>
+
+            <ul class="sector_mobilelist">
+              <li>
+                <a href="">Accountancy jobs <span>5, 757</span></a>
+              </li>
+              <li>
+                <a href="">Acturial jobs <span>5, 757</span></a>
+              </li>
+              <li>
+                <a href="">Admin, Secretarial jobs <span>5, 757</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-    
-        <div class="cookie">
-            <p>
-                Jobplus uses cookies. By contnuing you are agreeing to our use of cookies. <a href="">Learn more</a>
-            </p>
-            <img src="images/cookies-close.svg" alt="">
-        </div>
+      </div>
+
+      <div class="cookie">
+        <p>
+          Jobplus uses cookies. By contnuing you are agreeing to our use of
+          cookies. <a href="">Learn more</a>
+        </p>
+        <img src="images/cookies-close.svg" alt="Cookies close button" />
+      </div>
     </section>
     <footer class="footer">COPYRIGHT &copy; jobplus 2022</footer>
-</body>
-
+  </body>
 </html>
